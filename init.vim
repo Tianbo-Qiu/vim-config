@@ -210,7 +210,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "" coc config
-let g:coc_config_home = './coc'
+let g:coc_config_home = '~/.config/nvim/coc'
 
 " coc will install missing extensions after server started
 let g:coc_global_extensions = [
