@@ -1,0 +1,21 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "json"
+  ],
+  "tsserver.formatOnType": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "coc.preferences.formatOnType": true,
+  "languageserver": {}
+}
