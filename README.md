@@ -1,0 +1,4 @@
+## Vim Config
+
+Ingredients:
+  - neovim
