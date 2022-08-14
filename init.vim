@@ -14,6 +14,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'morhetz/gruvbox'
 
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 ""  general
@@ -264,3 +266,6 @@ endif
 syntax enable
 set background=dark
 colorscheme gruvbox
+
+" vim-airline optimization, https://github.com/vim-airline/vim-airline/issues/1526
+let g:airline_highlighting_cache=1
