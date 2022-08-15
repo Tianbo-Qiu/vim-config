@@ -12,9 +12,9 @@ Plug 'tpope/vim-rhubarb' " Enable :GB
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-Plug 'morhetz/gruvbox'
-
 Plug 'vim-airline/vim-airline'
+
+Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
 
@@ -245,27 +245,27 @@ nnoremap <C-p> :GFiles<CR>
 " CTRL + g for Ag
 nnoremap <C-g> :Ag<CR>
 
-"" gruvbox
-" true color support
-"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
-"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
-"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
-if (empty($TMUX))
-  if (has("nvim"))
-    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
-  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
-  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
-  if (has("termguicolors"))
-    set termguicolors
-  endif
+"" gruvbox-material
+
+" Important!!
+if has('termguicolors')
+  set termguicolors
 endif
 
-syntax enable
+" For dark version.
 set background=dark
-colorscheme gruvbox
+
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'soft'
+
+" For better performance
+let g:gruvbox_material_better_performance = 1
+
+colorscheme gruvbox-material
 
 " vim-airline optimization, https://github.com/vim-airline/vim-airline/issues/1526
 let g:airline_highlighting_cache=1
+
+let g:airline_theme = 'gruvbox_material'
