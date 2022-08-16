@@ -52,6 +52,10 @@ a general-purpose fuzzy finder
 
 https://github.com/junegunn/fzf
 
+language servers
+
+ccls: https://github.com/MaskRay/ccls/wiki
+
 ### Changes
 
 Sun Aug 14 11:23:20 PDT 2022

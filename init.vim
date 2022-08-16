@@ -273,7 +273,7 @@ let g:airline_theme = 'gruvbox_material'
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "javascript", "typescript", "tsx", "c", "cpp", "html", "css", "markdown", "vim" },
+  ensure_installed = { "javascript", "typescript", "tsx", "c", "cpp", "html", "css", "markdown", "vim", "json", "jsonc" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
