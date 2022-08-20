@@ -16,6 +16,8 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'sainnhe/gruvbox-material'
 
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 ""  general
